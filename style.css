@@ -1,0 +1,162 @@
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin-left: 0px;
+  background-color: #191919;
+  font-weight: 100;
+}
+
+/* Navigation */
+
+.nav-container {
+  background: #191919;
+  height: 72px;
+  width: 100%;
+  z-index: 1;
+  position: flex;
+  margin-top: -7px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+nav ul {
+  display: flex;
+}
+
+.nav-items li {
+  list-style: none;
+  margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+  margin-right: 40px;
+}
+
+.nav-items li a {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* K.Schmid */
+
+nav .logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background: #191919;
+  font-family: "Poppins", sans-serif;
+}
+
+nav .logo {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+nav .logo span {
+  display: inline-flex;
+  color: #191919(0, 0, 0);
+}
+
+nav .logo span:nth-child(even) {
+  overflow: hidden;
+  transform: ease-in-out 3s;
+  color: #191919(0, 0, 0);
+
+  letter-spacing: -1em;
+}
+nav .logo:hover span:nth-child(even) {
+  letter-spacing: 0;
+}
+nav .logo:hover span:nth-child(2) {
+  transition-delay: 0s;
+}
+nav .logo:hover span:nth-child(2) {
+  transition-delay: 0.5s;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 600px;
+  height: 100vh;
+}
+
+video {
+  width: 100%;
+  box-shadow: 0px 2px 2px #191200;
+  margin-top: 50px;
+  border-radius: 20px;
+  border-style: solid 2px;
+}
+
+span {
+  color: #ffffff;
+}
+
+li:hover {
+  text-shadow: 1px 10px 0px rgb(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+.logo:hover {
+}
+
+.canvas3d front {
+}
+
+/*shOOOwreel*/
+
+.main {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  margin-top: -20px;
+
+  @media (max-width: 600px) {
+    transform: scale(0.65);
+  }
+}
+.letter {
+  display: inline-flex;
+  height: 28px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 40px;
+  margin-top: 15px;
+
+  animation: letter 20s ease-in-out infinite alternate;
+}
+@keyframes span {
+  0%,
+  30% {
+    margin: 0 15px;
+  }
+  70%,
+  100% {
+    margin: 0 5px;
+  }
+}
+@keyframes letter {
+  0%,
+  30% {
+    width: 27px;
+  }
+  70%,
+  100% {
+    width: 24vw;
+  }
+}
