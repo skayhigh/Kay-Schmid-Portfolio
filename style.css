@@ -3,7 +3,6 @@ body {
   min-height: 100vh;
   width: 100vw;
   overflow: hidden;
-  margin-left: 0px;
   background-color: #191919;
   font-weight: 100;
 }
@@ -12,18 +11,18 @@ body {
 
 .nav-container {
   background: #191919;
-  height: 72px;
+  height: 7vh;
   width: 100%;
   z-index: 1;
   position: flex;
-  margin-top: -7px;
+  margin-top: 2vw;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 7vh;
 }
 
 nav ul {
@@ -32,16 +31,16 @@ nav ul {
 
 .nav-items li {
   list-style: none;
-  margin-right: 100px;
+  margin-right: 5rem;
 }
 
 .nav-items li:nth-last-of-type(1) {
-  margin-right: 40px;
+  margin-right: 2rem;
 }
 
 .nav-items li a {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 3em;
   font-family: "Poppins", sans-serif;
 }
 
@@ -50,19 +49,20 @@ nav ul {
 nav .logo {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: fixed;
   justify-content: left;
   align-items: left;
   background: #191919;
   font-family: "Poppins", sans-serif;
+  z-index: 0;
 }
 
 nav .logo {
   margin: 0;
   padding: 0;
-  font-size: 60px;
+  font-size: 5em;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: 1vw;
 }
 
 nav .logo span {
@@ -87,12 +87,6 @@ nav .logo:hover span:nth-child(2) {
   transition-delay: 0.5s;
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: 600px;
-  height: 100vh;
-}
-
 video {
   width: 100%;
   box-shadow: 0px 2px 2px #191200;
@@ -110,10 +104,9 @@ li:hover {
   font-style: italic;
 }
 
-.logo:hover {
-}
-
-.canvas3d front {
+.canvas3d {
+  width: 100vw;
+  height: 100%;
 }
 
 /*shOOOwreel*/
@@ -124,19 +117,19 @@ li:hover {
   justify-content: center;
   align-items: flex-start;
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
-  margin-top: -20px;
+  font-size: 3rem;
+  margin-top: -3vh;
 
-  @media (max-width: 600px) {
+  @media (max-width: 33%) {
     transform: scale(0.65);
   }
 }
 .letter {
   display: inline-flex;
-  height: 28px;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 40px;
-  margin-top: 15px;
+  height: 0.9vh;
+  border: 1rem solid rgb(255, 255, 255);
+  border-radius: 2rem;
+  margin-top: 1.5vh;
 
   animation: letter 20s ease-in-out infinite alternate;
 }
@@ -162,5 +155,18 @@ li:hover {
 }
 
 iframe {
-  margin-left: -240px;
+  margin-left: -12.5%;
+}
+
+@media screen and (min-width: 601px) {
+  div.nav-items {
+    font-size: 3em;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.nav-items {
+    font-size: 0.3em;
+  }
 }
